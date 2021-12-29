@@ -12,6 +12,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 import { ROUTES } from './app.routes';
+import { BlockComponent } from './block/block.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ROUTES } from './app.routes';
     CustomDirectivesComponent,
     MenuComponent,
     SignUpComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    BlockComponent
   ],
   imports: [
     BrowserModule,
