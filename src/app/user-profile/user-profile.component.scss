@@ -1,0 +1,28 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  text-align: center;
+  padding: 30px;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#age {
+  margin-bottom: 10px;
+}
+
+.nameBlock1,
+.nameBlock2 {
+  width: 50px;
+}
+
+.citation {
+  margin-top: 10px;
+}
