@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from "@angular/router";
-import { FormsModule } from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
@@ -13,6 +13,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 
 import { ROUTES } from './app.routes';
 import { BlockComponent } from './block/block.component';
+import { SearchMovieComponent } from './search-movie/search-movie.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,14 @@ import { BlockComponent } from './block/block.component';
     MenuComponent,
     SignUpComponent,
     UserProfileComponent,
-    BlockComponent
+    BlockComponent,
+    SearchMovieComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

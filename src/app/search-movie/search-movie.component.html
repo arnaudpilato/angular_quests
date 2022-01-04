@@ -1,0 +1,74 @@
+<h2 class="text-center">Challenge quête 06 - Les formulaires : reactive form</h2>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-5">
+      <form (ngSubmit)="onSubmit()" [formGroup]="movieForm" #myForm="ngForm">
+        <div formGroupName="identifyOrTitle">
+          <div class="row g-3 justify-content-between mb-3">
+            <div class="col-auto">
+              <label class="col-form-label" for="identify">Identifiant</label>
+            </div>
+            <div class="col-8">
+              <input class="form-control" id="identify" name="identify" type="text" formControlName="identify">
+            </div>
+          </div>
+          <div class="row g-3 justify-content-between mb-3">
+            <div class="col-auto">
+              <label class="col-form-label" for="title">Titre</label>
+            </div>
+            <div class="col-8">
+              <input class="form-control" id="title" name="title" type="text" formControlName="title">
+            </div>
+          </div>
+          <div class="text-center text-danger mb-3" *ngIf="myForm.submitted && movieForm.controls['identifyOrTitle']?.errors['isRequired']">
+            L'un des deux champs 'Identifiant' ou 'Titre' doit être renseigné.
+          </div>
+        </div>
+        <div class="row g-3 justify-content-between mb-3" *ngIf="movieForm.controls['identifyOrTitle'].get('identify').value">
+          <div class="col-auto">
+            <label class="col-form-label" for="type">Type</label>
+          </div>
+          <div class="col-8">
+            <select class="form-select" id="type" name="type" formControlName="type">
+              <option [ngValue]="0">film</option>
+              <option [ngValue]="1">série</option>
+              <option [ngValue]="2">épisode</option>
+            </select>
+          </div>
+        </div>
+        <div class="row g-3 justify-content-between mb-3 ">
+          <div class="col-auto">
+            <label class="col-form-label" for="year">Année de sortie</label>
+          </div>
+          <div class="col-8">
+            <input class="form-control" id="year" name="year" formControlName="year" type="number">
+          </div>
+        </div>
+        <div class="text-center text-danger my-3" *ngIf="myForm.submitted && movieForm.controls['year'].errors['required']">
+          Le champ "Année de sortie" est requis.
+        </div>
+        <div class="text-center text-danger my-3" *ngIf="myForm.submitted && movieForm.controls['year'].errors['min']">
+          L'année doit être comprise entre
+          {{ movieForm.controls['year'].errors['min'].minYearRequired }} et
+          {{ movieForm.controls['year'].errors['min'].maxYearRequired}}.
+        </div>
+        <div class="row g-3 justify-content-between mb-3">
+          <div class="col-auto">
+            <label class="col-form-label" for="plug">Fiche</label>
+          </div>
+          <div class="col-8">
+            <select class="form-select" id="plug" name="plug" formControlName="plug">
+              <option value="complete">complète</option>
+              <option value="small">courte</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-secondary mt-3" type="submit">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
