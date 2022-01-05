@@ -7,6 +7,7 @@ import {DeveloperComponent} from "./developer/developer.component";
 import {OutputComponent} from "./output/output.component";
 import {StartingComponent} from "./starting/starting.component";
 import {ComponentComponent} from "./component/component.component";
+import {DirectiveComponent} from "./directive/directive.component";
 
 const ROUTES: Routes = [
   { path: '', component: UserProfileComponent},
@@ -14,6 +15,7 @@ const ROUTES: Routes = [
   { path: 'starting', component: StartingComponent },
   { path: 'component', component: ComponentComponent },
   { path: 'signup', component: SignUpComponent},
+  { path: 'directive', component: DirectiveComponent },
   { path: 'custom-directives', component: CustomDirectivesComponent},
   { path: 'reactive-form', component: SearchMovieComponent},
   { path: 'input', component: DeveloperComponent },
