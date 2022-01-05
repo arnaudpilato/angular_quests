@@ -14,6 +14,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ROUTES } from './app.routes';
 import { BlockComponent } from './block/block.component';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
+import { DeveloperComponent } from './developer/developer.component';
+import { SkillComponent } from './developer/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SearchMovieComponent } from './search-movie/search-movie.component';
     SignUpComponent,
     UserProfileComponent,
     BlockComponent,
-    SearchMovieComponent
+    SearchMovieComponent,
+    DeveloperComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

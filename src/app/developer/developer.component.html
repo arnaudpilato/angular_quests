@@ -1,0 +1,19 @@
+<h2 class="text-center">Challenge 07 - Communication entre les composants</h2>
+<div class="container mt-4">
+  <h4>Informations globales du développeur</h4>
+  <ul>
+    <li>Nom : {{ developer.lastName }}</li>
+    <li>Prénom : {{ developer.firstName }}</li>
+    <li>Age : {{ developer.age }}</li>
+    <li>Sexe : {{ developer.sex }}</li>
+    <li>Bio : {{ developer.bio }}</li>
+  </ul>
+
+  <h4>Compétences du développeur</h4>
+  <div class="mt-3" *ngFor="let skill of developer.skills">
+    <app-skill
+      [skill]="skill">
+    </app-skill>
+  </div>
+</div>
+
