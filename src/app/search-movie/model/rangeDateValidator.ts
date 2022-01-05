@@ -10,10 +10,11 @@ export function rangeDateValidator(minYear: number, maxYear: Date): ValidatorFn 
         min: {
           minYearRequired: minYear.toString(),
           maxYearRequired: maxYearRequired.toString(),
+          essai: true,
         },
       };
     } else {
-      return null;
+      return { min: null };
     }
   };
 }
