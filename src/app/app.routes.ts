@@ -5,10 +5,14 @@ import {CustomDirectivesComponent} from "./custom-directives/custom-directives.c
 import {SearchMovieComponent} from "./search-movie/search-movie.component";
 import {DeveloperComponent} from "./developer/developer.component";
 import {OutputComponent} from "./output/output.component";
+import {StartingComponent} from "./starting/starting.component";
+import {ComponentComponent} from "./component/component.component";
 
 const ROUTES: Routes = [
   { path: '', component: UserProfileComponent},
   { path: 'user', component: UserProfileComponent},
+  { path: 'starting', component: StartingComponent },
+  { path: 'component', component: ComponentComponent },
   { path: 'signup', component: SignUpComponent},
   { path: 'custom-directives', component: CustomDirectivesComponent},
   { path: 'reactive-form', component: SearchMovieComponent},

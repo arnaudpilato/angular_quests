@@ -1,19 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div [hidden]="challenge1">
-  <div class="row">
-    <app-block class="unity"></app-block>
-    <app-block class="unity"></app-block>
-  </div>
-  <div class="bottom row">
-    <app-block class="unity"></app-block>
-    <app-block class="unity"></app-block>
-  </div>
-</div>
 <div>
   <h1 [ngStyle]="{color : isAdmin ? 'red' : 'black'}">
     {{ title }}
   </h1>
-  <p [hidden]="challenge0">Bienvenue sur le site de {{ title1 }}</p>
   <img
     width="300"
     alt="Angular Logo"
@@ -24,8 +12,5 @@
   <button *ngIf="isAdmin">View</button>
   <button>Edit</button>
 </div>
-<button (click)="challenge00()">Challenge 00</button>
-<br>
-<button (click)="challenge01()">Challenge 01</button>
 <app-menu></app-menu>
 <router-outlet></router-outlet>

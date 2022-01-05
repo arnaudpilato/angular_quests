@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from "@angular/router";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
@@ -12,12 +12,14 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 import { ROUTES } from './app.routes';
-import { BlockComponent } from './block/block.component';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './developer/skill/skill.component';
 import { OutputComponent } from './output/output.component';
 import { CreateOnomatopiaComponent } from './output/create-onomatopia/create-onomatopia.component';
+import { StartingComponent } from './starting/starting.component';
+import { ComponentComponent } from './component/component.component';
+import { BlockComponent } from './component/block/block.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { CreateOnomatopiaComponent } from './output/create-onomatopia/create-ono
     MenuComponent,
     SignUpComponent,
     UserProfileComponent,
-    BlockComponent,
     SearchMovieComponent,
     DeveloperComponent,
     SkillComponent,
     OutputComponent,
     CreateOnomatopiaComponent,
+    StartingComponent,
+    ComponentComponent,
+    BlockComponent,
   ],
   imports: [
     BrowserModule,
