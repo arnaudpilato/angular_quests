@@ -20,6 +20,7 @@ import { CreateOnomatopiaComponent } from './output/create-onomatopia/create-ono
 import { StartingComponent } from './starting/starting.component';
 import { ComponentComponent } from './component/component.component';
 import { BlockComponent } from './component/block/block.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { BlockComponent } from './component/block/block.component';
     StartingComponent,
     ComponentComponent,
     BlockComponent,
+    DirectiveComponent,
   ],
   imports: [
     BrowserModule,
