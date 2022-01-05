@@ -1,0 +1,7 @@
+<h2 class="text-center mb-4">Challenge 08 - Communication entre les composants : @Output</h2>
+<app-create-onomatopia (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"></app-create-onomatopia>
+<div class="container">
+  <ul class="mt-3" *ngFor="let onomatopeia of onomatopoeias">
+    <li>{{ onomatopeia }}</li>
+  </ul>
+</div>

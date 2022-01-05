@@ -16,6 +16,8 @@ import { BlockComponent } from './block/block.component';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './developer/skill/skill.component';
+import { OutputComponent } from './output/output.component';
+import { CreateOnomatopiaComponent } from './output/create-onomatopia/create-onomatopia.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { SkillComponent } from './developer/skill/skill.component';
     BlockComponent,
     SearchMovieComponent,
     DeveloperComponent,
-    SkillComponent
+    SkillComponent,
+    OutputComponent,
+    CreateOnomatopiaComponent,
   ],
   imports: [
     BrowserModule,
