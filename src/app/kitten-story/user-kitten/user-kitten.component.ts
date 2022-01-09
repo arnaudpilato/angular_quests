@@ -9,18 +9,16 @@ import {Kitten} from "../create-kitten/model/kitten.model";
 export class UserKittenComponent implements OnInit {
   @Input()
   kittens: Kitten[];
+  public visibility: boolean = false;
+  public iterator: number = 0;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  public visibility: boolean = false;
-  public iterator: number = 0;
-
   showInformation($event: number) {
     this.visibility = !this.visibility;
     this.iterator = $event;
   }
-
 }

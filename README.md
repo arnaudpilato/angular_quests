@@ -1,27 +1,43 @@
-# AngularQuest
+# Quêtes Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+Quêtes Angular de la formation Concepteur Developpeur d'Application de la Wild Code School
 
-## Development server
+## Quête 00 - Starting with angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Voir le composant starting (il remplace le composant app-component pour une raison d'organisation)
 
-## Code scaffolding
+## Quête 01 - Les composants
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Voir le composent block (il remplace le composant app-component pour une raison d'organisation)
 
-## Build
+## Quête 02 - Le binding
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Voir le composant user-profile
 
-## Running unit tests
+## Quête 03.1 - Les directives
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Voir le composant directive (il remplace le composant app-component pour une raison d'organisation)
 
-## Running end-to-end tests
+## Quête 03.2 - Les customs directives
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Voir le composant show-movies
 
-## Further help
+## Quête 05 - Les formulaires : templates driven forms
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Voir le composant sign-up
+
+## Quête 06 - Les formulaires : reactive form
+
+Voir le composant search-movie
+
+## Quête 07 - Communication entre les composants : @input
+
+Voir le dossier common qui contient la class Developper et la class Skill. Voir le component developer qui contient le component skill
+
+## Quête 08 - Communication entre les composants : @Output
+
+Voir le composant output (il remplace le component app-component pour une raison d'organisation)
+
+## Quête 09 - Les interactions entre les utilisateurs
+
+Voir le composant kitten-story
