@@ -25,6 +25,7 @@ import { CreateKittenComponent } from './kitten-story/create-kitten/create-kitte
 import { ListKittenComponent } from './kitten-story/list-kitten/list-kitten.component';
 import { UserKittenComponent } from './kitten-story/user-kitten/user-kitten.component';
 import { KittenStoryComponent } from './kitten-story/kitten-story.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { KittenStoryComponent } from './kitten-story/kitten-story.component';
     ListKittenComponent,
     UserKittenComponent,
     KittenStoryComponent,
+    CocktailListComponent,
   ],
   imports: [
     BrowserModule,

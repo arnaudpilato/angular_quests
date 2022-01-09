@@ -41,3 +41,7 @@ Voir le composant output (il remplace le component app-component pour une raison
 ## Quête 09 - Les interactions entre les utilisateurs
 
 Voir le composant kitten-story
+
+## Quête 10 - Les Services
+
+Voir le composant coktail-list

@@ -8,6 +8,7 @@ import {OutputComponent} from "./output/output.component";
 import {StartingComponent} from "./starting/starting.component";
 import {ComponentComponent} from "./component/component.component";
 import {DirectiveComponent} from "./directive/directive.component";
+import {KittenStoryComponent} from "./kitten-story/kitten-story.component";
 
 const ROUTES: Routes = [
   { path: '', component: UserProfileComponent},
@@ -20,6 +21,7 @@ const ROUTES: Routes = [
   { path: 'reactive-form', component: SearchMovieComponent},
   { path: 'input', component: DeveloperComponent },
   { path: 'output', component: OutputComponent},
+  { path: 'kitten-story', component: KittenStoryComponent}
 ]
 
 export { ROUTES };
