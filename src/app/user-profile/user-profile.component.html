@@ -1,15 +1,25 @@
 <div class="container">
-  <div>
-    <img [src]="User.photo" [alt]="User.name" />
+  <div class="row">
+    <div>
+      <img [src]="User.photo" [alt]="User.name" />
+    </div>
   </div>
-  <div class="name">
-    <div class="nameBlock1">{{ User.firstName }}</div>
-    <div class="nameBlock2">{{ User.name }}</div>
+  <div class="row">
+    <div class="name mt-2">
+      <div class="nameBlock1">{{ User.firstName }}</div>
+      <div class="nameBlock2">{{ User.name }}</div>
+    </div>
   </div>
-  <div [hidden]="age" id="age">Age : {{User.age}}</div>
-  <button (click)="masquerAge()">Afficher / Masquer Age</button>
-  <div class="citation">
-    <input class="input" [(ngModel)]="User.quote" />
-    <div>{{User.quote}}</div>
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <div [hidden]="age" id="age">Age : {{User.age}}</div>
+      <button class="btn btn-secondary" (click)="masquerAge()">Afficher / Masquer Age</button>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="citation col-3 justify-content-center">
+      <input class="input form-control" [(ngModel)]="User.quote" />
+      <div class="mt-3">{{User.quote}}</div>
+    </div>
   </div>
 </div>

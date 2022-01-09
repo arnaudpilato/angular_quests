@@ -21,6 +21,10 @@ import { StartingComponent } from './starting/starting.component';
 import { ComponentComponent } from './component/component.component';
 import { BlockComponent } from './component/block/block.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { CreateKittenComponent } from './kitten-story/create-kitten/create-kitten.component';
+import { ListKittenComponent } from './kitten-story/list-kitten/list-kitten.component';
+import { UserKittenComponent } from './kitten-story/user-kitten/user-kitten.component';
+import { KittenStoryComponent } from './kitten-story/kitten-story.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +44,10 @@ import { DirectiveComponent } from './directive/directive.component';
     ComponentComponent,
     BlockComponent,
     DirectiveComponent,
+    CreateKittenComponent,
+    ListKittenComponent,
+    UserKittenComponent,
+    KittenStoryComponent,
   ],
   imports: [
     BrowserModule,

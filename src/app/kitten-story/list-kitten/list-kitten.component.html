@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row d-flex justify-content-around">
+    <div class="col-4">
+      <h4 class="text-center my-4">Chatons disponibles</h4>
+      <div class="kitten-card mt-4" *ngFor="let kitten of kittens; let index = index">
+        <div>
+          <img class="picture" (mouseover)="showInformation(index)"  src="{{kitten.picture}}" alt="Image de chat">
+        </div>
+        <div class="kitten-list" *ngIf="visibility == true && iterator == index">
+          <h4 class="text-center my-2">Informations</h4>
+          <ul>
+            <li><b>Nom : </b>{{ kitten.name}}</li>
+            <li><b>Race : </b>{{ kitten.race }}</li>
+            <li><b>Date de naissance : </b>{{ kitten.birthday | date: 'dd MM yyyy' }}</li>
+          </ul>
+        </div>
+        <div class="text-center my-3">
+          <button class="btn btn-secondary mb-3" (click)="adopteKitten(index)">Adopter</button>
+        </div>
+      </div>
+    </div>
+    <app-user-kitten class="col-4" [kittens]="userKittens"></app-user-kitten>
+  </div>
+  <app-create-kitten (sendKitten)="onReceiveKitten($event)"></app-create-kitten>
+</div>
+
+
+
