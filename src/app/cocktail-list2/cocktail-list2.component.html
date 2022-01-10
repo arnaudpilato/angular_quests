@@ -1,0 +1,16 @@
+<h2 class="text-center mb-4">Challenge 11 - Les Services 2, le retour</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-4" *ngFor="let cocktail of cocktails">
+      <div class="cocktail-card mt-2">
+        <div class="cocktail-img">
+          <img class="picture" src="{{ cocktail.img }}">
+        </div>
+        <ul class="cocktail-list mt-2">
+          <li><b>Nom : </b>{{ cocktail.name }}</li>
+          <li><b>Prix : </b>{{ cocktail.price }} €</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

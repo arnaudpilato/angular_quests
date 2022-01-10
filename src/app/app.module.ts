@@ -26,6 +26,8 @@ import { ListKittenComponent } from './kitten-story/list-kitten/list-kitten.comp
 import { UserKittenComponent } from './kitten-story/user-kitten/user-kitten.component';
 import { KittenStoryComponent } from './kitten-story/kitten-story.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
+import { CocktailList2Component } from './cocktail-list2/cocktail-list2.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -50,12 +52,14 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
     UserKittenComponent,
     KittenStoryComponent,
     CocktailListComponent,
+    CocktailList2Component,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

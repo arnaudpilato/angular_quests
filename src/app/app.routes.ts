@@ -10,6 +10,7 @@ import {ComponentComponent} from "./component/component.component";
 import {DirectiveComponent} from "./directive/directive.component";
 import {KittenStoryComponent} from "./kitten-story/kitten-story.component";
 import {CocktailListComponent} from "./cocktail-list/cocktail-list.component";
+import {CocktailList2Component} from "./cocktail-list2/cocktail-list2.component";
 
 const ROUTES: Routes = [
   { path: '', component: UserProfileComponent },
@@ -23,7 +24,8 @@ const ROUTES: Routes = [
   { path: 'input', component: DeveloperComponent },
   { path: 'output', component: OutputComponent },
   { path: 'kitten-story', component: KittenStoryComponent },
-  { path: 'cocktail-list', component: CocktailListComponent }
+  { path: 'cocktail-list', component: CocktailListComponent },
+  { path: 'cocktail-list-2', component: CocktailList2Component }
 ]
 
 export { ROUTES };

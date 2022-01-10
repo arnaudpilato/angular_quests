@@ -45,3 +45,7 @@ Voir le composant kitten-story
 ## Quête 10 - Les Services
 
 Voir le composant coktail-list
+
+## Quête 11 - Les Services 2, le retour !
+
+Voir le composant coktail-list2 et le service cocktail2

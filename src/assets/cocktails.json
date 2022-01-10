@@ -1,0 +1,19 @@
+{
+  "cocktails": [
+    {
+      "name": "Mojito",
+      "price": 3,
+      "img": "https://cdn.pixabay.com/photo/2017/11/07/21/00/mojito-2928204_1280.jpg"
+    },
+    {
+      "name": "Ricasaoul",
+      "price": 2,
+      "img": "https://cdn.pixabay.com/photo/2018/07/13/20/26/table-3536491_1280.jpg"
+    },
+    {
+      "name": "Picon Bière",
+      "price": 4,
+      "img": "https://cdn.pixabay.com/photo/2018/05/31/16/51/beer-3444480_1280.jpg"
+    }
+  ]
+}
