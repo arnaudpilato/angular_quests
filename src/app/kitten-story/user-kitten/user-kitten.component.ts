@@ -8,7 +8,7 @@ import {Kitten} from "../create-kitten/model/kitten.model";
 })
 export class UserKittenComponent implements OnInit {
   @Input()
-  kittens: Kitten[];
+  kittens: Kitten[] | undefined;
   public visibility: boolean = false;
   public iterator: number = 0;
 

@@ -8,7 +8,7 @@ import {SkillModel} from "../common/skill.model";
   styleUrls: ['./developer.component.scss']
 })
 export class DeveloperComponent implements OnInit {
-  public developer: DeveloperModel;
+  public developer: DeveloperModel | undefined;
 
   constructor() { }
 

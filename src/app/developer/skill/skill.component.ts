@@ -8,7 +8,7 @@ import {SkillModel} from "../../common/skill.model";
 })
 export class SkillComponent implements OnInit {
   @Input()
-  skill: SkillModel;
+  skill: SkillModel | undefined;
 
   constructor() { }
 

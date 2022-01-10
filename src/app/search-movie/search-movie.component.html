@@ -20,11 +20,11 @@
               <input class="form-control" id="title" name="title" type="text" formControlName="title">
             </div>
           </div>
-          <div class="text-center text-danger mb-3" *ngIf="myForm.submitted && movieForm.controls['identifyOrTitle']?.errors['isRequired']">
+          <div class="text-center text-danger mb-3" *ngIf="myForm.submitted && movieForm.controls['identifyOrTitle'].errors?.['isRequired']">
             L'un des deux champs 'Identifiant' ou 'Titre' doit être renseigné.
           </div>
         </div>
-        <div class="row g-3 justify-content-between mb-3" *ngIf="movieForm.controls['identifyOrTitle'].get('identify').value">
+        <div class="row g-3 justify-content-between mb-3" *ngIf="movieForm.controls['identifyOrTitle'].get('identify')?.value">
           <div class="col-auto">
             <label class="col-form-label" for="type">Type</label>
           </div>
@@ -44,13 +44,13 @@
             <input class="form-control" id="year" name="year" formControlName="year" type="number">
           </div>
         </div>
-        <div class="text-center text-danger my-3" *ngIf="myForm.submitted && movieForm.controls['year'].errors['required']">
+        <div class="text-center text-danger my-3" *ngIf="myForm.submitted && movieForm.controls['year'].errors?.['required']">
           Le champ "Année de sortie" est requis.
         </div>
-        <div class="text-center text-danger my-3" *ngIf="myForm.submitted && movieForm.controls['year'].errors['min']">
+        <div class="text-center text-danger my-3" *ngIf="myForm.submitted && movieForm.controls['year'].errors?.['min']">
           L'année doit être comprise entre
-          {{ movieForm.controls['year'].errors['min'].minYearRequired }} et
-          {{ movieForm.controls['year'].errors['min'].maxYearRequired}}.
+          {{ movieForm.controls['year'].errors?.['min'].minYearRequired }} et
+          {{ movieForm.controls['year'].errors?.['min'].maxYearRequired }}.
         </div>
         <div class="row g-3 justify-content-between mb-3">
           <div class="col-auto">
