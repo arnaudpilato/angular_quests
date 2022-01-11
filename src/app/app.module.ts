@@ -28,6 +28,7 @@ import { KittenStoryComponent } from './kitten-story/kitten-story.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailList2Component } from './cocktail-list2/cocktail-list2.component';
 import {HttpClientModule} from "@angular/common/http";
+import { NasaComponent } from './nasa/nasa.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import {HttpClientModule} from "@angular/common/http";
     KittenStoryComponent,
     CocktailListComponent,
     CocktailList2Component,
+    NasaComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,13 +7,16 @@ import {map, Observable} from "rxjs";
 })
 export class NasaService {
   private service: HttpClient;
+  private url: string = 'https://api.nasa.gov/planetary/apod?'
+  private key: string = 'api_key=SkkwaOcSULMk3GblaEUwx8GTbgQvwAMsf67xBlPA';
+
 
   constructor(param_service: HttpClient) {
     this.service = param_service;
   }
 
   public getImageOfTheDay(): Observable<string> {
-    const observable: Observable<any> = this.service.get("https://api.nasa.gov/planetary/apod?api_key=SkkwaOcSULMk3GblaEUwx8GTbgQvwAMsf67xBlPA");
+    const observable: Observable<any> = this.service.get(this.url + this.key);
     const treatment = (param_data: any) => {
       return param_data.url as string;
     };
