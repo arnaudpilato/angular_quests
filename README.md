@@ -53,3 +53,7 @@ Voir le composant coktail-list2 et le service cocktail2
 ## Quête 12 - La Nasa vous rend service !
 
 Voir le composant nasa (il remplace le app-component pour une raison d'organisation)
+
+## Quête 13 - Pokedex
+
+Voir le dossier pokedex, la route "/" a été remplacée par "pokedex" pour une raison d'organisation
