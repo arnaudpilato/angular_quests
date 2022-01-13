@@ -29,6 +29,10 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailList2Component } from './cocktail-list2/cocktail-list2.component';
 import {HttpClientModule} from "@angular/common/http";
 import { NasaComponent } from './nasa/nasa.component';
+import { PokedexPageComponent } from './pokedex/pages/pokedex-page/pokedex-page.component';
+import { PokemonListComponent } from './pokedex/components/pokemon-list/pokemon-list.component';
+import { PokemonDetailComponent } from './pokedex/components/pokemon-detail/pokemon-detail.component';
+import { CreatePokemonComponent } from './pokedex/pages/create-pokemon/create-pokemon.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +59,10 @@ import { NasaComponent } from './nasa/nasa.component';
     CocktailListComponent,
     CocktailList2Component,
     NasaComponent,
+    PokedexPageComponent,
+    PokemonListComponent,
+    PokemonDetailComponent,
+    CreatePokemonComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,47 @@
+<div class="container">
+  <h2 class="mt-3">Ajout d'un nouveau Pokémon</h2>
+  <div class="row justify-content-center mt-3">
+    <div class="col-7">
+      <form (ngSubmit)="pokemon.valid && addPokemon()" [formGroup]="pokemon" #myForm="ngForm">
+        <div class="text-center text-success" *ngIf="myForm.submitted" >
+          Le pokémon "{{ newPokemon.name }}"  à bien été créé !
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="name">Nom :</label>
+          <input id="name" class="form-control" name="name" formControlName="name" type="text" placeholder="Pikachu">
+        </div>
+        <div *ngIf="pokemon.controls['name'].errors && myForm.submitted">
+          <div class="text-center text-danger my-3" *ngIf="pokemon.controls['name'].errors['required']">
+            Le nom du pokémon est requis
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="url">Lien HTML de l'image :</label>
+          <input id="url" class="form-control" name="url" formControlName="url" type="text" placeholder="http://...">
+        </div>
+        <div *ngIf="pokemon.controls['url'].errors && myForm.submitted">
+          <div class="text-center text-danger my-3" *ngIf="pokemon.controls['url'].errors['required']">
+            Le lien de l'image est requis
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="description">Description :</label>
+          <input class="form-control" id="description" name="description" formControlName="description" type="text" placeholder="Un magnifique pokémon des champs!">
+        </div>
+        <div *ngIf="pokemon.controls['description'].errors && myForm.submitted">
+          <div class="text-center text-danger my-3" *ngIf="pokemon.controls['description'].errors['required']">
+            La description du pokémon est requise
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+          <div class="m-1">
+            <button [ngClass]="{'btn' : true, 'btn-danger' : myForm.invalid, 'btn-success' : myForm.valid}">Ajouter</button>
+          </div>
+          <div class="m-1">
+            <a  class="btn btn-secondary" [routerLink]="['/pokedex']">retour</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

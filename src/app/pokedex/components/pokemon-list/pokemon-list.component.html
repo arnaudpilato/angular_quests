@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="d-flex justify-content-between mt-3">
+    <h2>Liste des Pokémons</h2>
+    <div>
+      <a class="btn btn-secondary" [routerLink]="['/create']">Nouveau Pokémon</a>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-3">
+    <div class="col-2 card m-2" (click)="getPokemon(pokemon)" *ngFor="let pokemon of pokemons">
+      <div><img class="picture" src="{{pokemon.url}}" alt="Image de pokémon"></div>
+      <div class="name text-center my-2">{{pokemon.name}}</div>
+    </div>
+  </div>
+</div>

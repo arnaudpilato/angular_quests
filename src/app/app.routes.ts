@@ -12,6 +12,8 @@ import {KittenStoryComponent} from "./kitten-story/kitten-story.component";
 import {CocktailListComponent} from "./cocktail-list/cocktail-list.component";
 import {CocktailList2Component} from "./cocktail-list2/cocktail-list2.component";
 import {NasaComponent} from "./nasa/nasa.component";
+import {PokedexPageComponent} from "./pokedex/pages/pokedex-page/pokedex-page.component";
+import {CreatePokemonComponent} from "./pokedex/pages/create-pokemon/create-pokemon.component";
 
 const ROUTES: Routes = [
   { path: '', component: UserProfileComponent },
@@ -27,7 +29,9 @@ const ROUTES: Routes = [
   { path: 'kitten-story', component: KittenStoryComponent },
   { path: 'cocktail-list', component: CocktailListComponent },
   { path: 'cocktail-list-2', component: CocktailList2Component },
-  { path: 'nasa', component: NasaComponent }
+  { path: 'nasa', component: NasaComponent },
+  { path: 'pokedex', component: PokedexPageComponent },
+  { path: 'create', component: CreatePokemonComponent }
 ]
 
 export { ROUTES };
